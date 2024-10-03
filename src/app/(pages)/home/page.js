@@ -65,7 +65,7 @@ const Home = () => {
         >
           <img
             className="w-full "
-            src={darkMode ? "/Images/Weather.svg" : "/Images/Sun.svg"}
+            src={darkMode ? "/images/weather.svg" : "images/sun.svg"}
           />
         </div>
       </div>

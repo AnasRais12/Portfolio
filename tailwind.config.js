@@ -24,8 +24,8 @@ module.exports = {
         
       },
       backgroundImage:{
-        dark_cloud: "url('/Images/cloudDark.png')",
-        light_cloud: "url('/Images/cloudBg.png')",
+        dark_cloud: "url('/images/cloudDark.png')",
+        light_cloud: "url('/images/cloudBg.png')",
 
       },
       boxShadow: {
