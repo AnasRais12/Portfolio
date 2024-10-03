@@ -16,18 +16,18 @@ const Home = () => {
     <>
       {/* Navbar - Home  - Start*/}
       <div
-        className={` flex px-[4%] justify-between bg-[#1E1E1E] dark:bg-gray-100   overflow-x-hidden   font-serif text-[#E0E0E0] w-full  fixed top-0 z-50 gap-8 items-center`}
+        className={` flex px-[5%] justify-between py-3 bg-[#1E1E1E] dark:bg-gray-100   overflow-x-hidden   font-serif text-[#E0E0E0] w-full  fixed top-0 z-50 gap-8 items-center`}
       >
-        <div className="w-[10%] flex justify-center  items-center rounded-full">
+        <div className=" w-[10%]  flex justify-start  items-center rounded-full">
           <h1
-            className={`font-Lobester text-[70px] text-gray-200 dark:text-blue-500 "  text-center`}
+            className={`font-Lobester lg:text-[50px] md:text-[50px]   text-gray-200 dark:text-blue-500 "  `}
           >
             A-B
           </h1>
         </div>
-        <div className="w-[80%] flex justify-end px-[5%] items-center">
+        <div className=" w-[85%] justify-end hidden lg:flex  items-center">
           <ul
-            className={`flex items-center gap-8 text-[20px] font-semibold font-Noto text-gray-200 dark:text-[#1E1E1E]   font-semi-bold`}
+            className={`flex items-center gap-8 lg:text-[20px]  lg:bg-red-900 md:bg-blue-600 md:text-[18px] xl:text-[22px] font-semibold font-Noto text-gray-200 dark:text-[#1E1E1E]   font-semi-bold`}
           >
             <li>
             <a className={`a1 hover:bg-[aqua] dark:hover:bg-blue-500 `} href="home">
@@ -61,20 +61,22 @@ const Home = () => {
         </div>
         <div
           onClick={toggleDarkMode}
-          className=" border-2 bg-white size-10 rounded-full flex justify-center items-center  "
+          className="w-[5%] rounded-full flex justify-end   items-center  "
         >
           <img
-            className="w-full "
+            className="w-full size-12 "
             src={darkMode ? "/images/Weather.svg" : "images/Sun.svg"}
           />
         </div>
       </div>
       {/* Home Page-Start */}
-      <div className="box  w-full h-screen font-second font-bold text-30px">
-        {/* Home Page - Start */}
 
-        <div className="content2 w-full bg-[#1E1E1E] border-b-4  z-0">
+
+      {/* <div className="box  w-full h-screen font-second font-bold text-30px"> */}
+        {/* Home Page - Start */}
           {/* Home Section-Start */}
+
+        {/* <div className="content2 w-full bg-[#1E1E1E] border-b-4  z-0">
           <div
             className={`w-full border-b-4 border-white  flex gap-4 pt-[100px] pb-[100px] px-[5%] bg-dark_cloud dark:bg-light_cloud bg-no-repeat items-center  bg-[#121212] `}
           >
@@ -105,11 +107,13 @@ const Home = () => {
             <div className="w-[50%]   ">
               <img className="w-full" src="/images/webdev.svg" />
             </div>
-          </div>
+          </div> */}
 
           {/* Home-Section-End */}
-        </div>
-      </div>{" "}
+        {/* </div> */}
+      {/* </div> */}
+
+      
       {/* Home Page End */}
     </>
   );

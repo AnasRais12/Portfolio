@@ -119,7 +119,7 @@ const About = () => {
                 <span></span> Hasni College Of Technology
               </h2>
               <h1
-                className={`text-[36px] font-serif text-[aqua]" dark:text-blue-500   font-semibold capitalize`}
+                className={`text-[36px] font-serif text-[aqua] dark:text-blue-500   font-semibold capitalize`}
               >
                 Others
               </h1>
