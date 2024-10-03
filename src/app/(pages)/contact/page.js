@@ -64,16 +64,16 @@ const Contact = () => {
           <div className="text-center flex flex-col justify-center items-cente pb-[6%] gap-10 ">
             <div className="flex gap-6 justify-center items-center">
               <a href="https://web.skype.com/ " target="blank">
-                <img className="w-14 hover:scale-125 duration-500 " src="/images/skype.svg" />
+                <img className="w-14 hover:scale-125 duration-500 " src="/images/Skype.svg" />
               </a>
               <a
                 href="https://www.linkedin.com/in/anas-baig-3ab1392b1/"
                 target="blank"
               >
-                <img className="w-14  hover:scale-150 duration-500" src="/images/linkdin.svg" />
+                <img className="w-14  hover:scale-150 duration-500" src="/images/Linkdin.svg" />
               </a>
               <a href="https://www.instagram.com/anasbaig604/">
-                <img className="w-14 hover:scale-150 duration-500 " src="/images/instagaram.svg" />
+                <img className="w-14 hover:scale-150 duration-500 " src="/images/Instagaram.svg" />
               </a>
               <a href="https://www.facebook.com/anas.rais.311" target="blank">
                 <img className="w-14 hover:scale-150 duration-500 " src="/images/facebooks-2.svg" />

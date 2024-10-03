@@ -65,7 +65,7 @@ const Home = () => {
         >
           <img
             className="w-full "
-            src={darkMode ? "/images/weather.svg" : "images/sun.svg"}
+            src={darkMode ? "/images/Weather.svg" : "images/Sun.svg"}
           />
         </div>
       </div>
@@ -103,7 +103,7 @@ const Home = () => {
               </div>
             </div>
             <div className="w-[50%]   ">
-              <img className="w-full" src="/Images/webdev.svg" />
+              <img className="w-full" src="/images/webdev.svg" />
             </div>
           </div>
 
