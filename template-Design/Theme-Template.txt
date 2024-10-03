@@ -1,0 +1,80 @@
+
+
+
+Dark Mode Theme
+__________________________________________________________________________________________
+1) Background Color:
+   Color: #121212 (dark gray/black)
+
+2) Text Color:
+    Color: #E0E0E0 (light gray)
+
+3) Heading Color:
+   Color: #FFFFFF (white)
+
+4) Button Color:
+Background Color: #1E1E1E (dark gray)
+Text Color: #E0E0E0 (light gray)
+
+5) Hover Color:
+Button Background: #BB86FC (purple)
+Button Text: #FFFFFF (white)
+________________________________________________________________________________________________________
+
+Light Mode Theme
+
+1) Background Color:
+Color: #FFFFFF (white)
+
+2) Text Color:
+ Color: #333333 (dark gray)
+
+3) Heading Color:
+Color: #000000 (black)
+
+4) Button Color:
+Background Color: #F0F0F0 (light gray)
+Text Color: #333333 (dark gray)
+
+5) Hover Color:
+Button Background: #BBDEFB (light blue)
+Button Text: #000000 (black)
+
+
+________________________________________________________________________________________________________
+Navbar (For Both Themes)
+Background Color:
+Dark Mode: #1E1E1E
+Light Mode: #F0F0F0
+Text Color:
+Dark Mode: #E0E0E0
+Light Mode: #333333
+
+
+________________________________________________________________________________________________________________________-
+Font Size Recommendations
+Navbar:
+
+Font Size: 16px - 18px (readable and accessible)
+Font Weight: 600 (semi-bold)
+Headings:
+
+Main Heading (h1): 32px - 36px
+Subheading (h2): 24px - 28px
+Section Headings (h3): 20px - 24px
+Font Weight:
+Main Heading: 700 (bold)
+Subheadings: 600 (semi-bold)
+Section Headings: 500 (medium)
+Body Text:
+
+Font Size: 14px - 16px (comfortable for reading)
+Font Weight: 400 (normal)
+Buttons:
+
+Font Size: 16px - 18px
+Font Weight: 600 (semi-bold)
+Padding: 10px 20px (for better clickability)
+Additional Tips
+Line Height: Aap line height ko 1.5 set kar sakte hain body text ke liye taaki readability behtar ho.
+Font Family: Aap sans-serif fonts jaise Roboto, Open Sans, ya Arial choose kar sakte hain, jo modern aur clean dikhte hain.
