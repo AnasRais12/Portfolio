@@ -1,82 +1,105 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [menuBar, setMenubar] = useState(false);
+
+  const toggleButton = () => {
+    setMenubar(!menuBar);
+  };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     const htmlElement = document.documentElement;
-    htmlElement.classList.toggle('dark', !darkMode);
+    htmlElement.classList.toggle("dark", !darkMode);
   };
+
   return (
     <>
       {/* Navbar - Home  - Start*/}
       <div
-        className={` flex px-[5%] justify-between py-3 bg-[#1E1E1E] dark:bg-gray-100   overflow-x-hidden   font-serif text-[#E0E0E0] w-full  fixed top-0 z-50 gap-8 items-center`}
+        className={`navbar flex px-8  bg-gray lg:px-16 overflow-x-hidden bg-[#1E1E1E] py-2 justify-between   dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full  fixed top-0 z-50 gap-8 items-center`}
       >
-        <div className=" w-[10%]  flex justify-start  items-center rounded-full">
-          <h1
-            className={`font-Lobester lg:text-[50px] md:text-[50px]   text-gray-200 dark:text-blue-500 "  `}
-          >
-            A-B
-          </h1>
+        {/* Logo */}
+        <div className=" logo sm:w-[10%] w-[13%]  flex justify-start items-center overflow-x-hidden   ">
+          <img
+            className=" xl:w-[60%] lg:w-[70%] md:w-[80%] rounded-full w-full border-2  "
+            src="images/logo-3.jpg"
+          />
         </div>
-        <div className=" w-[85%] justify-end hidden lg:flex  items-center">
-          <ul
-            className={`flex items-center gap-8 lg:text-[20px]  lg:bg-red-900 md:bg-blue-600 md:text-[18px] xl:text-[22px] font-semibold font-Noto text-gray-200 dark:text-[#1E1E1E]   font-semi-bold`}
-          >
+
+        {/* Menu */}
+        <div className="lg:w-[80%] justify-end hidden lg:flex items-center ">
+          <ul className="flex items-center lg:gap-8 gap-5 lg:text-[20px] text-[18px] xl:text-[22px] font-semibold text-gray-200 dark:text-[#1E1E1E]">
             <li>
-            <a className={`a1 hover:bg-[aqua] dark:hover:bg-blue-500 `} href="home">
-               Home
+              <a className="hover:bg-[aqua] dark:hover:bg-blue-500" href="home">
+                Home
               </a>
             </li>
             <li>
-            <a className={`a1 hover:bg-[aqua] dark:hover:bg-blue-500 `} href="about">
+              <a
+                className="hover:bg-[aqua] dark:hover:bg-blue-500"
+                href="about"
+              >
                 About
               </a>
             </li>
             <li>
-            <a className={`a1 hover:bg-[aqua] dark:hover:bg-blue-500 `} href="project">
+              <a
+                className="hover:bg-[aqua] dark:hover:bg-blue-500"
+                href="project"
+              >
                 Project
               </a>
             </li>
             <li>
-            <a className={`a1 hover:bg-[aqua] dark:hover:bg-blue-500 `} href="contact">
+              <a
+                className="hover:bg-[aqua] dark:hover:bg-blue-500"
+                href="contact"
+              >
                 Contact
-
               </a>
             </li>
             <li>
-              <a className={`a1 hover:bg-[aqua] dark:hover:bg-blue-500 `} href="skills">
+              <a
+                className="hover:bg-[aqua] dark:hover:bg-blue-500"
+                href="skills"
+              >
                 Skills
               </a>
             </li>
           </ul>
-
-          {/* ICONS LIGHT And Dark Theme */}
         </div>
+
         <div
-          onClick={toggleDarkMode}
-          className="w-[5%] rounded-full flex justify-end   items-center  "
+          
+          className="rounded-full xl:w-[10%] lg:w-[10%] md:w-[20%] sm:w-[27%] w-[32%]   justify-end  flex items-center "
         >
-          <img
-            className="w-full size-12 "
-            src={darkMode ? "/images/Weather.svg" : "images/Sun.svg"}
-          />
+          <div onClick={toggleButton} className="md:w-[40%] w-[50%] lg:hidden md:flex flex overflow-x-hidden justify-end">
+          {menuBar? <FaBars className="icons lg:text-[30px] md:text-[40px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black "/> : <ImCross className="icons lg:text-[30px] md:text-[38px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black "/>}
+          </div>
+          <div onClick={toggleDarkMode} className=" image-container lg:w-[100%] w-[45%] sm:w-[40%] md:w-[40%] justify-end flex  lg:bg-transparent ">
+            <img
+              className="image- xl:w-[35%] lg:w-[50%]  md:w-[72%] sm:w-[60%]  w-[50%]"
+              src={darkMode ? "/images/Weather.svg" : "images/Sun.svg"}
+            />
+          </div>
+          
         </div>
       </div>
+
+      {/* Menu Bar */}
+
       {/* Home Page-Start */}
 
-
       {/* <div className="box  w-full h-screen font-second font-bold text-30px"> */}
-        {/* Home Page - Start */}
-          {/* Home Section-Start */}
+      {/* Home Page - Start */}
+      {/* Home Section-Start */}
 
-        {/* <div className="content2 w-full bg-[#1E1E1E] border-b-4  z-0">
+      {/* <div className="content2 w-full bg-[#1E1E1E] border-b-4  z-0">
           <div
             className={`w-full border-b-4 border-white  flex gap-4 pt-[100px] pb-[100px] px-[5%] bg-dark_cloud dark:bg-light_cloud bg-no-repeat items-center  bg-[#121212] `}
           >
@@ -109,11 +132,10 @@ const Home = () => {
             </div>
           </div> */}
 
-          {/* Home-Section-End */}
-        {/* </div> */}
+      {/* Home-Section-End */}
+      {/* </div> */}
       {/* </div> */}
 
-      
       {/* Home Page End */}
     </>
   );
