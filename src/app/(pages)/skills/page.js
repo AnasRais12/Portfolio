@@ -14,7 +14,7 @@ const Skills = () => {
         </h1>
 
         <div>
-          <div className="gap-10 px-[2%] lg:px-[8%]   py-[2%] grid md:grid-cols-3 grid-cols-2 justify-between font-sans text-[18px] items-center">
+          <div className="gap-10 px-[3%] lg:px-[8%]   py-[2%] grid md:grid-cols-3 grid-cols-2 justify-between font-sans text-[18px] items-center">
             {techStack.map((el, index) => (
               <div
                 key={index}

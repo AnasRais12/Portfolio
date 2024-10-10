@@ -32,7 +32,7 @@ const Home = () => {
         </div>
 
         {/* Menu */}
-        <div className="lg:w-[80%] justify-end hidden lg:flex items-center ">
+        <div className="lg:w-[80%] w-[0%] justify-end hidden lg:flex items-center ">
           <ul className="flex items-center lg:gap-8 gap-5 lg:text-[20px] text-[18px] xl:text-[22px] font-semibold text-gray-200 dark:text-[#1E1E1E]">
             <li>
               <a className="hover:bg-[aqua] dark:hover:bg-blue-500" href="home">
@@ -76,7 +76,7 @@ const Home = () => {
 
         <div
           
-          className="rounded-full xl:w-[10%] lg:w-[10%] md:w-[20%] sm:w-[27%] w-[32%]   justify-end  flex items-center "
+          className="rounded-full xl:w-[10%]  lg:w-[10%] md:w-[20%] sm:w-[27%] w-[32%]   justify-end  flex items-center "
         >
           <div onClick={toggleButton} className="md:w-[40%] w-[50%] lg:hidden md:flex flex overflow-x-hidden justify-end">
           {menuBar? <FaBars className="icons lg:text-[30px] md:text-[40px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black "/> : <ImCross className="icons lg:text-[30px] md:text-[38px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black "/>}
