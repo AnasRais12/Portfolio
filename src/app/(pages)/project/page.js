@@ -4,19 +4,19 @@ import React, { useEffect } from "react";
 const Project = () => {
   const projects = [
     {
-      name: "/Images/image.png",
+      image: "/Images/image.png",
       description:
         "In this project, I created the user homepage using Tailwind CSS for styling and responsive layouts. I implemented CRUD operations in the backend using Adonis.js to manage user data. The frontend was built with React.js, handling and interacting with data. SQL was used for the database to store and retrieve information.",
       tools: ["React", "Tailwind CSS", "Adonis.js", "SQL"],
     },
     {
-      name: "O - E ",
+      image: "O - E ",
       description:
         "In this project, I created the user homepage using Tailwind CSS for styling and responsive layouts. I implemented CRUD operations in the backend using Adonis.js to manage user data. The frontend was built with React.js, handling and interacting with data. SQL was used for the database to store and retrieve information.",
       tools: ["React", "Tailwind CSS", "Adonis.js", "SQL"],
     },
     {
-      name: "M U H I B - E - W A T A N",
+      image: "M U H I B - E - W A T A N",
       description:
         "In this project, I created the user homepage using Tailwind CSS for styling and responsive layouts. I implemented CRUD operations in the backend using Adonis.js to manage user data. The frontend was built with React.js, handling and interacting with data. SQL was used for the database to store and retrieve information.",
       tools: ["React", "Tailwind CSS", "Adonis.js", "SQL"],
@@ -65,20 +65,20 @@ const Project = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={` sticky-card py-10 xl:bg-red-500 lg:bg-green-400 md:bg-slate-700  w-[80%] lg:w-[50%] md:px-6 lg:px-8 xl:px-10 shadow-custom  shadow-gray-700 dark:shadow-gray-900 bg-[#111111] dark:bg-gray-200   relative overflow-visible  justify-center flex text-[20px] font-bold font-sans rounded-lg transition-transform duration-500 ease-in-out transform opacity-70 hover:scale-110 hover:z-[9999]   `}
+                className={` sticky-card py-10   sm:w-[80%] w-[90%]  md:w-[70%] lg:w-[60%] xl:w-[50%] px-6 lg:px-8 xl:px-10 shadow-custom  shadow-gray-700 dark:shadow-gray-900 bg-[#111111] dark:bg-gray-200   relative overflow-visible  justify-center flex text-[20px] font-bold font-sans rounded-lg transition-transform duration-500 ease-in-out transform opacity-70 hover:scale-110   `}
               >
                 <div className="flex   text-center flex-col gap-8 w-full justify-center items-center ">
                   <img
-                    src={project.name}
-                    className={` bg-white dark:bg-transparent w-[30%] `}
+                    src={project.image}
+                    className={`image-project bg-white dark:bg-transparent w-[40%] sm:w-[40%]  lg:w-[30%] `}
                   />
                   <p
-                    className={` text-gray-200 dark:text-Shade text-[20px] font-normal `}
+                    className={` text-gray-200 dark:text-Shade text-[16px] sm:text-[17px] md:text-[19px] lg:text-[20px] xl:text-[22px] font-normal `}
                   >
                     {project.description}
                   </p>
                   <ul
-                    className={` text-gray-200 dark:text-Shade mt-4  flex justify-center gap-10 text-[20px]`}
+                    className={` text-gray-200 dark:text-Shade mt-4  flex justify-center text-[15px] sm:text-[17px] md:text-[19px] gap-5 sm:gap-6 md:gap-10 lg:text-[20px] xl:text-[22px]`}
                   >
                     {project.tools.map((tool, i) => (
                       <li key={i}>{tool}</li>
@@ -89,17 +89,10 @@ const Project = () => {
                   </div> */}
                   <div className="relative  mx-auto group flex justify-center">
                     <button
-                      className={`p-4 bg-[#00ffff1a] dark:bg-blue-500 px-20   text-white rounded-md`}
+                      className={` py-2 sm:py-3 md:py-3 lg:py-4  bg-[#00ffff1a] dark:bg-blue-500 px-10 sm:px-20   text-white rounded-md hover:scale-125 duration-500 hover:px-10`}
                     >
                       Visit Site
                     </button>
-
-                    {/* Hidden image with transition */}
-                    <div className="absolute rounded-[1%] w-full top-[-90%] bg-white dark:bg-black text-black dark:text-white mt-2 opacity-0 group-hover:opacity-100 group-hover:top-[-210%] transition-all duration-500 ease-in-out">
-                      <a href="https://richys.com/" target="blank">
-                        <img src="/Images/image.png" alt="Image" />
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>

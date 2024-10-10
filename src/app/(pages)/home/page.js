@@ -21,7 +21,7 @@ const Home = () => {
     <>
       {/* Navbar - Home  - Start*/}
       <div
-        className={`navbar flex px-8  bg-gray lg:px-16 overflow-x-hidden bg-[#1E1E1E] py-2 justify-between   dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full  fixed top-0 z-50 gap-8 items-center`}
+        className={`navbar flex px-8  bg-gray md:px-16 overflow-x-hidden bg-[#1E1E1E] py-2 justify-between   dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full  fixed top-0 z-50 gap-8 items-center`}
       >
         {/* Logo */}
         <div className=" logo sm:w-[10%] w-[13%]  flex justify-start items-center overflow-x-hidden   ">

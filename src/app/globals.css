@@ -59,8 +59,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   margin-bottom: 50px;
-  z-index: 1;
-  top: 50px !important;
+  top: 100px !important;
   opacity: 0.7;
 }
 
@@ -137,7 +136,7 @@ body {
   animation-range: entry 0 cover 25%;
 }
 
- a {
+ /* a {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 30px;
@@ -149,7 +148,7 @@ a:hover{
   color: white;
   border: 1px solid orangered; 
   background-color: aqua;
-}
+} */
 
 .line-1 {
   width: 710px;
@@ -222,6 +221,10 @@ a:hover{
   .boxes-skill h4{
     font-size: 13px !important;
 }
+.contact-box h2{
+  font-size: 12px !important;
+}
+
 }
 @media screen and (max-width: 380px) {
   .about-box h2 {
@@ -241,6 +244,12 @@ a:hover{
   .project h1{
     font-size: 30px;
   }
+  .contact-box h1{
+    font-size: 30px;
+  }
+  .contact-box h2{
+    font-size: 14px;
+  }
 
   .boxes h1 {
     font-size: 28px;
@@ -254,6 +263,15 @@ a:hover{
   .icons {
     font-size: 28px;
   }
+  .contact-icon{
+  gap: 10px;
+  }
+  .contact-icon a img{
+    width: 35px;
+    }
 }
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 420px) {
+  .image-project{
+    width: 55% !important;
+  }
 }
