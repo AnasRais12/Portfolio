@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
+import  { forwardRef } from "react";
 
-const Project = () => {
+const Project = forwardRef((props, ref) => {
   const projects = [
     {
       image: "/Images/image.png",
@@ -52,7 +53,7 @@ const Project = () => {
 
   return (
     <>
-      <div
+      <div ref={ref}
         className={`project bg-[#121212] dark:bg-gray-100 relative w-full py-16  border-b-4 font-bold flex flex-col gap-24`}
       >
         <h1
@@ -102,6 +103,6 @@ const Project = () => {
       </div>
     </>
   );
-};
+});
 
 export default Project;

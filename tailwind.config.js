@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transform: ['responsive'],
+      rotate: ['responsive'],
+     
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -33,5 +36,6 @@ module.exports = {
       }
     },
   },
+  
   plugins: [],
 };

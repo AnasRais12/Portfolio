@@ -1,10 +1,11 @@
 "use client";
+import React , { forwardRef } from "react";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
     <>
-      <div
-        className={`about-box relative w-full py-16  border-b-4 bg-[#121212] dark:bg-gray-100  font-bold flex flex-col gap-10`}
+      <div ref={ref}
+        className={`about-box relative  w-full py-16  border-b-4 bg-[#1b1a1a] dark:bg-gray-100  font-bold flex flex-col gap-10`}
       >
         <h1
           className={`dark:text-[#1a1818]  text-center text-white  font-semibold font-Noto md:text-[50px] sm:text-[50px] text-[40px]  lg:text-[50px] `}
@@ -14,7 +15,7 @@ const About = () => {
         <div className="w-full px-[3%] xl:px-[7%] lg:px-[4%] justify-center items-center  flex flex-col gap-5">
           <div className='lg:w-[100%] w-[100%]  flex justify-center items-center'>
           <h2
-            className={`xl:text-[25px] lg:text-[21px] sm:text-[20px] text-[18px] text-center    font-Noto font-normal text-[#E0E0E0] dark:text-[#1E1E1E]   mb-[30px]`}
+            className={`xl:text-[25px] lg:text-[21px] sm:text-[20px] text-[18px] text-center leading-10 font-Noto font-normal text-[#E0E0E0] dark:text-[#1E1E1E]   mb-[30px]`}
           >
           As a Frontend Developer, I build responsive and user-friendly web applications using React.js and Next.js. I use Tailwind CSS to create clean, modern designs, enhanced by animations that improve user interaction. On the backend, I work with Node.js and Adonis.js to manage data, perform CRUD operations, and integrate APIs, ensuring everything runs smoothly. I'm also proficient with GitHub for version control and collaboration. My goal is to create web solutions that are visually appealing, functionally strong, and interactive, providing users with a great experience.
 
@@ -77,6 +78,6 @@ const About = () => {
       </div>
     </>
   );
-};
+});
 
 export default About;

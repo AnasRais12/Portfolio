@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { forwardRef } from "react";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   useEffect(() => {
     var paths = "M 10 100 Q 500 100 990 100  ";
     const finals = "M 10 100 Q 500 100 990 100 ";
@@ -28,7 +29,7 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <div
+      <div ref={ref}
         className={`contact-box w-full pt-16 bg-[#0f0d0d] dark:bg-white flex flex-col  gap-4`}
       >
         <h1
@@ -105,6 +106,6 @@ const Contact = () => {
       </div>
     </>
   );
-};
+});
 
 export default Contact;

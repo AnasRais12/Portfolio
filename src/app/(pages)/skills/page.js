@@ -1,10 +1,11 @@
 "use client";
 import { techStack } from "@/constant";
+import  { forwardRef } from "react";
 
-const Skills = () => {
+const Skills = forwardRef((props, ref) => {
   return (
     <>
-      <div
+      <div ref={ref}
         className={`boxes-skill relative w-full py-16  bg-[#0f0d0d] dark:bg-white  border-b-4 font-bold flex flex-col gap-8`}
       >
         <h1
@@ -30,6 +31,6 @@ const Skills = () => {
       </div>
     </>
   );
-};
+});
 
 export default Skills;

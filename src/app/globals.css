@@ -13,7 +13,9 @@
 * {
   margin: 0px;
   padding: 0px;
+  transition: all ease 0.1s;
 }
+
 
 ::-webkit-scrollbar {
   width: 1.2rem;
@@ -32,6 +34,7 @@
 
 body {
   width: 100%;
+  position: relative;
 }
 :root {
   --background: #ffffff;
@@ -136,7 +139,7 @@ body {
   animation-range: entry 0 cover 25%;
 }
 
- /* a {
+ .navbar a {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 30px;
@@ -144,11 +147,11 @@ body {
   transition: border 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
-a:hover{
+.navbar a:hover{
   color: white;
   border: 1px solid orangered; 
   background-color: aqua;
-} */
+} 
 
 .line-1 {
   width: 710px;
@@ -159,7 +162,7 @@ a:hover{
 }
 
 /* Animation */
-.anim-typewriter {
+/* .anim-typewriter {
   animation: typewriter 4s steps(18) 1s infinite normal both,
     blinkTextCursor 500ms steps(18) infinite normal;
 }
@@ -187,7 +190,7 @@ a:hover{
   to {
     border-right-color: transparent;
   }
-}
+} */
 
 @media screen and (max-width: 440px) {
   .image- {
@@ -269,9 +272,32 @@ a:hover{
   .contact-icon a img{
     width: 35px;
     }
+  
 }
 @media screen and (max-width: 420px) {
   .image-project{
     width: 55% !important;
+  }
+  .content2 h1{
+    font-size: 30px !important;
+  }
+  .content2 button{
+    padding: 0.5rem 3.5rem;
+  }
+}
+@media screen and (max-width:441px){
+  .content2 h1{
+    font-size: 35px
+  }
+  .content2 button{
+    padding: 0.3rem 4rem;
+  }
+}
+@media screen and (max-width:341px){
+  .content2 h1{
+    font-size: 25px !important;
+  }
+  .content2 button{
+    padding: 0.2rem 3rem;
   }
 }
