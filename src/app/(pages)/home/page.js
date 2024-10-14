@@ -30,7 +30,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   return (
     <>
       {/* Navbar */}
-      <div className="bg-black dark:bg-[#44ccee] border-b-black border-2 relative">
+      <div className="bg-black dark:bg-[#44ccee] border-b-black  relative">
         <div
           className={` navbar flex px-8 bg-gray md:px-20   bg-[#1E1E1E]  py-2 justify-between dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full fixed top-0 z-50 gap-8 items-center`}
         >
@@ -197,7 +197,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
                 My goal is to transform ideas into fully functional and visually
                 appealing web applications.
               </h2>
-              <a className="" href="/documents/Anas.pdf" download={"Anas.pdf"}>
+              <a className="" href="/images/documents/Anas.pdf" download={"Anas"}>
                 <button
                   className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-4 lg:px-36 text-[20px] lg:text-[23px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
                 >
