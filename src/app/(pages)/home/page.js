@@ -137,10 +137,10 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
             <>
               <div
                 ref={sidebarRef} // Ref for GSAP animation target
-                className={`lg:hidden block slide absolute sm:top-[85px] top-[85px] md:top-[85px]  rounded-[10px] sm:right-[1%] right-[2%]   bg-black  text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5 opacity-0`}
+                className={`lg:hidden block slide absolute sm:top-[85px] top-[85px] md:top-[85px]  rounded-[10px] sm:right-[1%] right-[2%] dark:bg-gray-100 bg-black text-blue-500  dark:text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5 opacity-0`}
                 style={{ transform: "translateX(200px)" }} //
               >
-                <ul className="flex flex-col gap-6 lg:text-[20px] text-[14px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-[#1E1E1E]">
+                <ul className="flex flex-col gap-6 lg:text-[20px] text-[14px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-blue-500 ">
                   <li>
                     <a
                       className="hover:bg-[aqua] dark:hover:bg-blue-500"
