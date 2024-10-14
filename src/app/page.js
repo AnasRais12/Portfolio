@@ -20,8 +20,8 @@ const page = () => {
       <div className=" grid grid-cols-1  ">
         <Home aboutRef={aboutRef} projectRef={projectRef} contactRef={contactRef} skillsRef={skillsRef} />
         <About ref={aboutRef} />
-        <Skills ref={skillsRef} />
         <Project ref={projectRef} />
+        <Skills ref={skillsRef} />
         <Contact ref={contactRef} />
       </div>
       </>

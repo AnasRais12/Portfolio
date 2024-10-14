@@ -1,6 +1,7 @@
-'use client'
-import React, {  useRef, useState } from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import gsap from "gsap";
 import { ImCross } from "react-icons/im";
 
 const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
@@ -9,6 +10,26 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [menuBar, setMenubar] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (menuBar && sidebarRef.current) {
+      gsap.to(sidebarRef.current, {
+        x: 0, // Slide in from the right
+        opacity: 1,
+        duration: 0.6,
+        ease: "power3.inOut",
+      });
+    } else if (sidebarRef.current) {
+      gsap.to(sidebarRef.current, {
+        x: 200,
+
+        // Slide out to the right
+        opacity: 2,
+        duration: 2,
+        ease: "power3.inOut",
+      });
+    }
+  }, [menuBar]);
 
   const toggleButton = () => {
     setMenubar((prev) => !prev);
@@ -93,7 +114,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
           <div className="rounded-full xl:w-[10%]    lg:w-[10%] md:w-[20%] sm:w-[27%] w-[32%]   justify-end  flex items-center ">
             <div
               onClick={toggleButton}
-              className="md:w-[40%] w-[50%] lg:hidden md:flex flex overflow-x-hidden justify-end "
+              className="md:w-[40%] w-[50%] lg:hidden md:flex flex  justify-end "
             >
               {menuBar ? (
                 <ImCross className="icons lg:text-[30px] md:text-[40px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black transition-transform duration-500 ease-in-out transform rotate-180" />
@@ -116,7 +137,8 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
             <>
               <div
                 ref={sidebarRef} // Ref for GSAP animation target
-                className={`lg:hidden bloc slide  absolute sm:top-[85px] top-[85px] md:top-[8px]  rounded-[10px] sm:right-[1%] right-[2%]   bg-black  text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5`}
+                className={`lg:hidden block slide absolute sm:top-[85px] top-[85px] md:top-[85px]  rounded-[10px] sm:right-[1%] right-[2%]   bg-black  text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5 opacity-0`}
+                style={{ transform: "translateX(200px)" }} //
               >
                 <ul className="flex flex-col gap-6 lg:text-[20px] text-[14px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-[#1E1E1E]">
                   <li>
@@ -187,7 +209,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
                 <span className="ml-2">Baig</span>
               </h1>
               <h1
-                className={` font-sans tracking-normal sm:text-[50px] text-[40px] font-extrabold md:text-[4.3vw] lg:text-[4.3vw] text-[aqua] dark:text-blue-500`}
+                className={` font-sans tracking-normal sm:mt-[0px] md:mt-[-10px] lg:mt-[-15px] sm:text-[50px] text-[40px] font-extrabold md:text-[4.3vw] lg:text-[4.3vw] text-[aqua] dark:text-blue-500`}
               >
                 Frontend Developer
               </h1>
@@ -197,9 +219,13 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
                 My goal is to transform ideas into fully functional and visually
                 appealing web applications.
               </h2>
-              <a className="" href="/images/documents/Anas.pdf" download={"Anas"}>
+              <a
+                className=""
+                href="/images/documents/Anas.pdf"
+                download={"Anas"}
+              >
                 <button
-                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-4 lg:px-36 text-[20px] lg:text-[23px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
+                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-2 lg:px-28 text-[20px] lg:text-[23px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
                 >
                   Resume
                 </button>
