@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+'use client'
+import React, {  useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import gsap from "gsap";
 
 const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   const homeRef = useRef(null);
