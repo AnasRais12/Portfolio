@@ -1,4 +1,3 @@
-'use client'
 import React, { useEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
@@ -10,27 +9,9 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   const [darkMode, setDarkMode] = useState(false);
   const [menuBar, setMenubar] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  useEffect(() => {
-    if (isMenuOpen && sidebarRef.current) {
-      // Ensure sidebarRef is defined
-      gsap.fromTo(
-        sidebarRef.current,
-        { x: 300 }, // Starting position (off-screen)
-        { x: 0, duration: 1, ease: "power3.out" } // Ending position (on-screen)
-      );
-    } else if (sidebarRef.current) {
-      // Ensure sidebarRef is defined
-      gsap.to(sidebarRef.current, {
-        x: 300, // Move it off-screen
-        duration: 0.5,
-        ease: "power3.in",
-      });
-    }
-  }, [isMenuOpen]);
 
   const toggleButton = () => {
-    setMenubar(!menuBar);
-    setIsMenuOpen(!isMenuOpen); // Also update the isMenuOpen state
+    setMenubar((prev) => !prev);
   };
 
   const toggleDarkMode = () => {
@@ -49,7 +30,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
   return (
     <>
       {/* Navbar */}
-      <div className="bg-black dark:bg-[#44ccee] border-b-black border-2">
+      <div className="bg-black dark:bg-[#44ccee] border-b-black border-2 relative">
         <div
           className={` navbar flex px-8 bg-gray md:px-20   bg-[#1E1E1E]  py-2 justify-between dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full fixed top-0 z-50 gap-8 items-center`}
         >
@@ -131,14 +112,13 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
               />
             </div>
           </div>
-          {menuBar === true && (
+          {menuBar && (
             <>
               <div
                 ref={sidebarRef} // Ref for GSAP animation target
-                className="lg:hidden block absolute top-[100px] rounded-[20px] right-0 bg-[#1a1919] text-[aqua] mr-4 w-[20%] py-5"
-                style={{ transform: "translateX(300px)" }} // Initial position off-screen
+                className={`lg:hidden bloc slide  absolute sm:top-[85px] top-[85px] md:top-[8px]  rounded-[10px] sm:right-[1%] right-[2%]   bg-black  text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5`}
               >
-                <ul className="flex flex-col gap-4 lg:text-[20px] text-[18px] xl:text-[22px] font-semibold text-[aqua] dark:text-[#1E1E1E]">
+                <ul className="flex flex-col gap-6 lg:text-[20px] text-[14px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-[#1E1E1E]">
                   <li>
                     <a
                       className="hover:bg-[aqua] dark:hover:bg-blue-500"
@@ -219,7 +199,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
               </h2>
               <a className="" href="/documents/Anas.pdf" download={"Anas.pdf"}>
                 <button
-                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-4 lg:px-36 text-[20px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
+                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-4 lg:px-36 text-[20px] lg:text-[23px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
                 >
                   Resume
                 </button>

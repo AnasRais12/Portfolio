@@ -9,7 +9,9 @@ module.exports = {
   theme: {
     extend: {
       transform: ['responsive'],
-      rotate: ['responsive'],
+      rotate:{ 'y-180': '180deg',
+        'y-0': '0deg',
+    },
      
       colors: {
         background: "var(--background)",
