@@ -141,7 +141,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
                 className={`lg:hidden block slide absolute sm:top-[85px] top-[85px] md:top-[85px]  rounded-[10px] sm:right-[1%] right-[2%] shadow-lg  dark:shadow-black dark:bg-gray-100 bg-gray-900 text-blue-500  dark:text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5 opacity-0`}
                 style={{ transform: "translateX(200px)" }} //
               >
-                <ul className="flex flex-col gap-6 lg:text-[20px] text-[14px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-blue-500 ">
+                <ul className="flex flex-col sm:gap-6 gap-4 lg:text-[20px] text-[13px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-blue-500 ">
                   <li>
                     <a
                       className="hover:bg-[aqua] dark:hover:bg-blue-500"
