@@ -16,8 +16,6 @@
   transition: all ease 0.1s;
 }
 
-
-
 ::-webkit-scrollbar {
   width: 1.2rem;
 }
@@ -119,7 +117,6 @@ body {
 
   animation-timing-function: ease-in-out;
   animation-timeline: view();
-;
   animation-range: entry 0 cover 30%;
   transition: all 4ms ease-in-out;
 }
@@ -140,7 +137,7 @@ body {
   animation-range: entry 0 cover 25%;
 }
 
- .navbar a {
+.navbar a {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 30px;
@@ -148,22 +145,21 @@ body {
   transition: border 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
-.navbar a:hover{
+.navbar a:hover {
   color: white;
-  border: 1px solid orangered; 
+  border: 1px solid orangered;
   background-color: aqua;
-} 
+}
 
 .line-1 {
-  width: 710px;
+  width: fit-content;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
-  margin-top: -30px;
   overflow: hidden;
 }
 
 /* Animation */
-/* .anim-typewriter {
+.anim-typewriter {
   animation: typewriter 4s steps(18) 1s infinite normal both,
     blinkTextCursor 500ms steps(18) infinite normal;
 }
@@ -172,10 +168,10 @@ body {
     width: 0;
   }
   38.5% {
-    width: 720px;
+    width: 800px;
   }
   57.5% {
-    width: 720px;
+    width: fit-content;
   }
   90% {
     width: 0;
@@ -191,7 +187,7 @@ body {
   to {
     border-right-color: transparent;
   }
-} */
+}
 
 @media screen and (max-width: 440px) {
   .image- {
@@ -222,19 +218,18 @@ body {
   .boxes h2 {
     font-size: 12px !important;
   }
-  .boxes-skill h4{
+  .boxes-skill h4 {
     font-size: 13px !important;
-}
-.contact-box h2{
-  font-size: 12px !important;
-}
-
+  }
+  .contact-box h2 {
+    font-size: 12px !important;
+  }
 }
 @media screen and (max-width: 380px) {
   .about-box h2 {
     font-size: 14px;
   }
-  .boxes-skill h4{
+  .boxes-skill h4 {
     font-size: 15px;
     margin-left: 7px;
   }
@@ -245,13 +240,13 @@ body {
     background-color: red;
     font-size: 30px;
   } */
-  .project h1{
+  .project h1 {
     font-size: 30px;
   }
-  .contact-box h1{
+  .contact-box h1 {
     font-size: 30px;
   }
-  .contact-box h2{
+  .contact-box h2 {
     font-size: 14px;
   }
 
@@ -267,46 +262,140 @@ body {
   .icons {
     font-size: 28px;
   }
-  .contact-icon{
-  gap: 10px;
+  .contact-icon {
+    gap: 10px;
   }
-  .contact-icon a img{
+  .contact-icon a img {
     width: 35px;
-    }
-  
+  }
 }
 @media screen and (max-width: 420px) {
-  .image-project{
+  .image-project {
     width: 55% !important;
   }
-  .content2 h1{
+  .content2 h1 {
     font-size: 30px !important;
   }
-  .content2 button{
+  .content2 button {
     padding: 0.5rem 3.5rem;
   }
-  .slide{
+  .slide {
     width: 40%;
   }
 }
-@media screen and (max-width:441px){
-  .content2 h1{
-    font-size: 35px
+@media screen and (max-width: 441px) {
+  .content2 h1 {
+    font-size: 35px;
   }
-  .content2 button{
+  .content2 button {
     padding: 0.3rem 4rem;
   }
-  .slide{
+  .slide {
     top: 70px !important ;
-      
   }
 }
-@media screen and (max-width:341px){
-  .content2 h1{
+@media screen and (max-width: 341px) {
+  .content2 h1 {
     font-size: 25px !important;
   }
- 
-  .content2 button{
+
+  .content2 button {
     padding: 0.2rem 3rem;
+  }
+}
+@media screen and (max-width: 2000px) {
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    38.5% {
+      width: 600px;
+    }
+    57.5% {
+      width: fit-content;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    38.5% {
+      width: 400px;
+    }
+    57.5% {
+      width: fit-content;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    38.5% {
+      width: 300px;
+    }
+    57.5% {
+      width: fit-content;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    38.5% {
+      width: 300px;
+    }
+    57.5% {
+      width: fit-content;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    38.5% {
+      width: 150px;
+    }
+    57.5% {
+      width: fit-content;
+    }
+    90% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
   }
 }

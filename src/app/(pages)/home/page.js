@@ -128,8 +128,9 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
               className=" image-container lg:w-[100%] w-[45%] sm:w-[40%] md:w-[40%] justify-end flex  lg:bg-transparent "
             >
               <img
-                className="image- xl:w-[35%] lg:w-[50%]  md:w-[72%] sm:w-[60%]  w-[50%]"
-                src={darkMode ? "/images/Weather.svg" : "images/Sun.svg"}
+                className="image- xl:w-[35%] lg:w-[50%] md:w-[60%] sm:w-[60%]  w-[50%]"
+                src={darkMode ? "/images/Sun.svg" : "/images/star.svg"}
+                style={{ transform: "rotate(250deg)" }}
               />
             </div>
           </div>
@@ -137,7 +138,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
             <>
               <div
                 ref={sidebarRef} // Ref for GSAP animation target
-                className={`lg:hidden block slide absolute sm:top-[85px] top-[85px] md:top-[85px]  rounded-[10px] sm:right-[1%] right-[2%] dark:bg-gray-100 bg-black text-blue-500  dark:text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5 opacity-0`}
+                className={`lg:hidden block slide absolute sm:top-[85px] top-[85px] md:top-[85px]  rounded-[10px] sm:right-[1%] right-[2%] shadow-lg  dark:shadow-black dark:bg-gray-100 bg-gray-900 text-blue-500  dark:text-[aqua] w-[28%] sm:w-[25%]  md:w-[20%] py-5 opacity-0`}
                 style={{ transform: "translateX(200px)" }} //
               >
                 <ul className="flex flex-col gap-6 lg:text-[20px] text-[14px] sm:text-[14px] md:text-[15px] xl:text-[22px] font-semibold text-[aqua] dark:text-blue-500 ">
@@ -203,13 +204,13 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
           <div className="w-full  grid sm:grid-cols-1 md:grid-cols-2 sm:gap-2 gap-0  py-10 md:py-[50px]  ">
             <div className=" w-full text-center  md:text-start items-center md:items-start justify-center text-[#E0E0E0] lg:pt-[50px]   py-[20px] flex flex-col  px-5">
               <h1
-                className={`w-full lg:text-[4.5vw] md:text-[4.8vw] sm:text-[50px] text-[40px]  text-[#E0E0E0] dark:text-[#242424] tracking-tighter font-extrabold font-sans`}
+                className={`w-full lg:text-[4.5vw] md:text-[4.8vw] sm:text-[50px] text-[40px]  text-[#E0E0E0] dark:text-[#242424] tracking-tighter  font-extrabold font-sans`}
               >
-                Hi, I'm <span className="ml-1">Anas</span>
-                <span className="ml-2">Baig</span>
+                Hi,  I'm <span className="ml-1 tracking-normal">Anas</span>
+                <span className="ml-2 tracking-normal">Baig</span>
               </h1>
               <h1
-                className={` font-sans tracking-normal sm:mt-[0px] md:mt-[-10px] lg:mt-[-15px] sm:text-[50px] text-[40px] font-extrabold md:text-[4.3vw] lg:text-[4.3vw] text-[aqua] dark:text-blue-500`}
+                className={`line-1 anim-typewriter font-sans tracking-normal sm:mt-[0px] md:mt-[-10px] lg:mt-[-15px] sm:text-[50px] text-[40px] font-extrabold md:text-[4.3vw] lg:text-[4.3vw] text-[aqua] dark:text-blue-500`}
               >
                 Frontend Developer
               </h1>
@@ -225,7 +226,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
                 download={"Anas"}
               >
                 <button
-                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-2 lg:px-28 text-[20px] lg:text-[23px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
+                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-2 lg:px-32 text-[20px] xl:px-36 xl:text-[1.5vw] lg:text-[25px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
                 >
                   Resume
                 </button>
