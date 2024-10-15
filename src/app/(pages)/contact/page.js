@@ -1,32 +1,46 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { forwardRef } from "react";
-
 const Contact = forwardRef((props, ref) => {
+  
   useEffect(() => {
-    var paths = "M 10 100 Q 500 100 990 100  ";
-    const finals = "M 10 100 Q 500 100 990 100 ";
+    const svg = document.querySelector("#lines svg");
+    const path = svg.querySelector("path");
+    const finals = "M 10 100 Q 500 100 990 100";
 
-    var string = document.querySelector("#lines");
-    string.addEventListener("mousemove", function (dets) {
-      paths = `M 10 100 Q ${dets.x} ${dets.y} 990 100 `;
-      gsap.to("svg path", {
+    svg.addEventListener("mousemove", function (event) {
+      const rect = svg.getBoundingClientRect();
+      const x = event.clientX - rect.left; // Mouse X relative to SVG
+      const y = event.clientY - rect.top; // Mouse Y relative to SVG
+      
+      // Adjusting the y-coordinate to move the line down
+      const adjustedY = Math.max(y + 50, 100); // Adjust +50 to move it lower
+
+      const paths = `M 10 ${adjustedY} Q ${x} ${adjustedY} 990 ${adjustedY}`;
+      
+      gsap.to(path, {
         attr: { d: paths },
         duration: 0.7,
         ease: "power3.out",
       });
     });
-    var string = document.querySelector("#lines");
-    string.addEventListener("mouseleave", function () {
-      gsap.to("svg path", {
+
+    svg.addEventListener("mouseleave", function () {
+      gsap.to(path, {
         attr: { d: finals },
         duration: 1.3,
-
         ease: "elastic.inOut",
       });
     });
+
+    // Clean up event listeners on component unmount
+    return () => {
+      svg.removeEventListener("mousemove", this);
+      svg.removeEventListener("mouseleave", this);
+    };
   }, []);
+
   return (
     <>
       <div ref={ref}
@@ -88,21 +102,21 @@ const Contact = forwardRef((props, ref) => {
               </a>
             </div>
         </div>
-        <div id="lines" className={`h-[80px]  dark:bg-white    w-full `}>
-          <svg
-            viewBox="0 0 1000 500" // Update the viewBox to allow scaling
-            preserveAspectRatio="none" // Prevent distortion
-            className={`w-full h-full`} // Ensure full width & height
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M 10 100 Q 500 100 990 100 "
-              stroke={`white`}
-              strokeWidth="20"
-              fill="transparent"
-            />
-          </svg>
-        </div>
+        <div id="lines" className={`h-[200px] dark:bg-white w-full`}>
+        <svg
+          viewBox="0 0 1000 500"
+          preserveAspectRatio="none"
+          className={`w-full h-full`}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M 10 100 Q 500 100 990 100"
+            stroke={`white`}
+            strokeWidth="20"
+            fill="transparent"
+          />
+        </svg>
+      </div>
       </div>
     </>
   );
