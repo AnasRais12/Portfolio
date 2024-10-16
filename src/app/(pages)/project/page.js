@@ -8,7 +8,7 @@ const Project = forwardRef((props, ref) => {
     {
       names: "Mystery Message",
       description:
-        "With guidance, I have worked on key topics for building a production-ready app using Next.js, including Zod validation, database connections, and email setup with Resend. I implemented custom OTP for user signup and authentication with NextAuth, along with OTP verification, unique username checks, and AI feature integration. Additionally, I focused on advanced form handling with React Hook Form and Shadcn, message APIs with aggregation pipelines, and a user dashboard with carousel functionality. This project is still a work in progress, and I am actively working to complete it soon.",
+       "With guidance, I built a production-ready app in Next.js, focusing on Zod validation, database integration, and email setup using Resend. I implemented custom OTP signup, NextAuth authentication, and AI features. Additionally, I worked on advanced form handling with React Hook Form, Shadcn, and user dashboard functionality. The project is ongoing and nearing completion",
       tools: ["Next.js", "Typescript", "React.js", "MongoDB"],
       link:"https://github.com/AnasRais12/mystery-message"
     },
@@ -19,15 +19,11 @@ const Project = forwardRef((props, ref) => {
       tools: ["React.js", "Tailwind CSS", ],
      link: " https://github.com/AnasRais12/uL-ux"
     },
-    {
-      names: "M U H I B - E - W A T A N",
-      description:
-        "In this project, I created the user homepage using Tailwind CSS for styling and responsive layouts. I implemented CRUD operations in the backend using Adonis.js to manage user data. The frontend was built with React.js, handling and interacting with data. SQL was used for the database to store and retrieve information.",
-      tools: ["React.js", "Tailwind CSS", "Adonis.js", "SQL"],
-    },
+   
     {
       names: "Todo-List",
-      description:    "This project is a Todo Application that utilizes the AdonisJS framework for the backend and React, Axios, and Moment.js for the frontend. It features CRUD (Create, Read, Update, Delete) functionalities that allow users to easily manage todo items and their subtasks.Users can add, edit, and delete their tasks, organizing them into pending, ongoing,and done categories, while also setting deadlines. Axios fetches data from the server in real-time, providing the ability to prioritize tasks through drag-and-drop functionality. This application offers an intuitive and user-friendly experience, making it a modern way to manage a todo list.",
+     description:
+      "This Todo Application combines AdonisJS for the backend with React, Axios, and Moment.js for the frontend. It offers CRUD functionalities for managing tasks and subtasks in various categories, with deadlines. Real-time data fetching via Axios and drag-and-drop prioritization enhance user experience. Overall, it provides an intuitive way to manage todo lists.",
       tools: ["React.js", "Tailwind CSS", "Adonis.js", "SQL"],
       link:"https://github.com/AnasRais12/Todos"
     },
