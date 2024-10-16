@@ -28,13 +28,7 @@ const Project = forwardRef((props, ref) => {
       link:"https://github.com/AnasRais12/mystery-message"
     },
    
-    {
-      names: "Portfolio",
-      description:"Welcome to my portfolio! I am a Frontend Developer with a passion for crafting responsive web applications. As I progress in my career, I aspire to become a MERN stack developer, enhancing my skills in both frontend and backend technologies. Explore my projects, which reflect my commitment to quality and user experience, and feel free to connect for potential collaborations",
-     tools: ["Next.js", "Tailwind CSS", "Gsap"],
-
-      link:"https://github.com/AnasRais12/Portfolio"
-    },
+   
   ];
 
   useEffect(() => {
