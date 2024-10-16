@@ -16,16 +16,15 @@ const Project = forwardRef((props, ref) => {
    
     {
       names: "Todo-List",
-     description:
-      "This Todo Application combines AdonisJS for the backend with React, Axios, and Moment.js for the frontend. It offers CRUD functionalities for managing tasks and subtasks in various categories, with deadlines. Real-time data fetching via Axios and drag-and-drop prioritization enhance user experience. Overall, it provides an intuitive way to manage todo lists.",
-      tools: ["React.js", "Tailwind CSS", "Adonis.js", "SQL"],
+     description: "This Todo Application uses AdonisJS for the backend and Next, Axios, and Moment.js for the frontend. It features CRUD functionalities for managing tasks and subtasks with deadlines, real-time data fetching, and drag-and-drop prioritization, offering an intuitive way to manage todo lists.",
+     tools: ["Next.js", "Tailwind CSS","Adonis.js","MYSQL"],
       link:"https://github.com/AnasRais12/Todos"
     },
     {
       names: "Mystery Message",
-      description:
-       "With guidance, I built a production-ready app in Next.js, focusing on Zod validation, database integration, and email setup using Resend. I implemented custom OTP signup, NextAuth authentication, and AI features. Additionally, I worked on advanced form handling with React Hook Form, Shadcn, and user dashboard functionality. The project is ongoing and nearing completion",
-      tools: ["Next.js", "Typescript", "React.js", "MongoDB"],
+      description:"With guidance, I developed a production-ready Next.js app, focusing on Zod validation, database integration, and email setup with Resend. I implemented custom OTP signup, NextAuth authentication, and AI features, along with advanced form handling and user dashboard functionality. The project is ongoing and nearing completion.",
+     tools: ["Next.js", "Tailwind CSS","Typescript","MongoDB"],
+
       link:"https://github.com/AnasRais12/mystery-message"
     },
   ];
@@ -82,9 +81,7 @@ const Project = forwardRef((props, ref) => {
                       <li key={i}>{tool}</li>
                     ))}
                   </ul>
-                  {/* <div> 
-                  <button className=" px-20 py-2 bg-[#219e9e] rounded-[5px] text-[23px] font-sans text-[white] font-bold  mt-[30px] mb-[10px]">Visit Site </button>
-                  </div> */}
+                 
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
           <button
             className={`pro-button py-2 flex justify-center sm:text-[25px] text-[22px] md:text-[25px] lg:text-[30px] items-center lg:gap-3 gap-2 bg-[#00ffff1a] dark:bg-blue-500 px-16 sm:px-20 text-white rounded-md hover:scale-125 duration-500 hover:px-10`}

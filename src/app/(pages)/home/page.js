@@ -129,7 +129,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
             >
               <img
                 className="image- xl:w-[35%] lg:w-[50%] md:w-[60%] sm:w-[60%]  w-[50%]"
-                src={darkMode ? "/images/Sun.svg" : "/images/star.svg"}
+                src={darkMode ? "/images/Sun.svg" : "/images/Moon.svg"}
                 style={{ transform: "rotate(250deg)" }}
               />
             </div>
