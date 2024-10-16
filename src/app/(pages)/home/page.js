@@ -4,10 +4,9 @@ import { FaBars } from "react-icons/fa";
 import gsap from "gsap";
 import { ImCross } from "react-icons/im";
 
-const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
+const Home = ({ aboutRef, projectRef, contactRef, skillsRef,toggleDarkMode,darkMode }) => {
   const homeRef = useRef(null);
   const sidebarRef = useRef(null);
-  const [darkMode, setDarkMode] = useState(false);
   const [menuBar, setMenubar] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,11 +34,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
     setMenubar((prev) => !prev);
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    const htmlElement = document.documentElement;
-    htmlElement.classList.toggle("dark", !darkMode);
-  };
+ 
 
   // Scroll to section
   const scrollToSection = (ref) => {
@@ -53,12 +48,12 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
       {/* Navbar */}
       <div className="bg-black dark:bg-[#44ccee] border-b-black  relative">
         <div
-          className={` navbar flex px-8 bg-gray md:px-20   bg-[#1E1E1E]  py-2 justify-between dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full fixed top-0 z-50 gap-8 items-center`}
+          className={` navbar flex px-8 bg-gray md:px-12 lg:px-20   bg-[#1E1E1E]  py-2 justify-between dark:bg-gray-100 font-Noto text-[#E0E0E0] w-[100%] sm:w-full fixed top-0 z-50 gap-8 items-center`}
         >
           {/* Logo */}
-          <div className="logo sm:w-[10%] w-[13%] flex justify-start items-center overflow-x-hidden">
+          <div className="logo sm:w-[10%] w-[15%] flex justify-start items-center overflow-x-hidden">
             <img
-              className="xl:w-[60%] lg:w-[70%] md:w-[80%] rounded-full w-full border-2"
+              className="xl:w-[60%] lg:w-[80%] md:w-[85%] rounded-full w-full border-2"
               src="images/logo-3.jpg"
               alt="Logo"
             />
@@ -117,9 +112,9 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
               className="md:w-[40%] w-[50%] lg:hidden md:flex flex  justify-end "
             >
               {menuBar ? (
-                <ImCross className="icons lg:text-[30px] md:text-[40px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black transition-transform duration-500 ease-in-out transform rotate-180" />
+                <ImCross className="icons lg:text-[30px] md:text-[42px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black transition-transform duration-500 ease-in-out transform rotate-180" />
               ) : (
-                <FaBars className="icons lg:text-[30px] md:text-[38px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black transition-transform duration-500 ease-in-out transform rotate-0" />
+                <FaBars className="icons lg:text-[30px] md:text-[42px] sm:text-[40px] text-[35px] text-gray-200 dark:text-black transition-transform duration-500 ease-in-out transform rotate-0" />
               )}
             </div>
 
@@ -128,9 +123,9 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef }) => {
               className=" image-container lg:w-[100%] w-[45%] sm:w-[40%] md:w-[40%] justify-end flex  lg:bg-transparent "
             >
               <img
-                className="image- xl:w-[35%] lg:w-[50%] md:w-[60%] sm:w-[60%]  w-[50%]"
+                className="image- xl:w-[35%] lg:w-[50%] md:w-[70%] sm:w-[60%]  w-[50%]"
                 src={darkMode ? "/images/Sun.svg" : "/images/Moon.svg"}
-                style={{ transform: "rotate(250deg)" }}
+                style={{ transform: "rotate(242deg)" }}
               />
             </div>
           </div>

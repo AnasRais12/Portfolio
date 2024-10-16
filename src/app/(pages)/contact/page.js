@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { forwardRef } from "react";
 
-const Contact = forwardRef((props, ref) => {
+const Contact = forwardRef(({ darkMode }, ref) => {
   useEffect(() => {
     const finals = "M 10 100 Q 500 100 990 100"; // Final path after mouse leaves
 
@@ -77,7 +77,7 @@ const Contact = forwardRef((props, ref) => {
         </div>
         <div id="lines" className="h-[70px] dark:bg-white w-full">
           <svg viewBox="0 0 1000 500" preserveAspectRatio="none" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 10 100 Q 500 100 990 100" stroke="white" strokeWidth="20" fill="transparent" />
+            <path d="M 10 100 Q 500 100 990 100" stroke={`${darkMode? 'black': 'white'}`} strokeWidth="20" fill="transparent" />
           </svg>
         </div>
       </div>

@@ -13,7 +13,7 @@ export const techStack = [
     { name: "Bootstrap", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" },
     { name: "CSS", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" },
     { name: "HTML", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-    {name: "Gsap", link: "/Images/gsap-greensock.svg"}
+    {name: "Gsap", link: "/images/gsap-greensock.svg"}
     
   
   
