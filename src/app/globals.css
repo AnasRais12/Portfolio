@@ -142,12 +142,10 @@ body {
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 15px 10px 15px;
-  transition: border 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
 .navbar a:hover {
   color: white;
-  border: 1px solid orangered;
   background-color: aqua;
 }
 
@@ -304,6 +302,22 @@ body {
     padding: 0.2rem 3rem;
     font-size: 15px !important;
   }
+  .project-heading{
+    font-size: 25px !important;
+  }
+  .project-para{
+    font-size: 15px !important;
+  }
+  .tools{
+    font-size: 14px;
+  }
+  .pro-button{
+   padding-top: 4px;
+   font-size: 19px;
+   padding-bottom: 4px;
+  }
+
+  
 }
 @media screen and (max-width: 2000px) {
   @keyframes typewriter {
