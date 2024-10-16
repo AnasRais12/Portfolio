@@ -5,13 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 
 const Project = forwardRef((props, ref) => {
   const projects = [
-    {
-      names: "Mystery Message",
-      description:
-       "With guidance, I built a production-ready app in Next.js, focusing on Zod validation, database integration, and email setup using Resend. I implemented custom OTP signup, NextAuth authentication, and AI features. Additionally, I worked on advanced form handling with React Hook Form, Shadcn, and user dashboard functionality. The project is ongoing and nearing completion",
-      tools: ["Next.js", "Typescript", "React.js", "MongoDB"],
-      link:"https://github.com/AnasRais12/mystery-message"
-    },
+  
     {
       names: "O - E ",
       description:
@@ -26,6 +20,13 @@ const Project = forwardRef((props, ref) => {
       "This Todo Application combines AdonisJS for the backend with React, Axios, and Moment.js for the frontend. It offers CRUD functionalities for managing tasks and subtasks in various categories, with deadlines. Real-time data fetching via Axios and drag-and-drop prioritization enhance user experience. Overall, it provides an intuitive way to manage todo lists.",
       tools: ["React.js", "Tailwind CSS", "Adonis.js", "SQL"],
       link:"https://github.com/AnasRais12/Todos"
+    },
+    {
+      names: "Mystery Message",
+      description:
+       "With guidance, I built a production-ready app in Next.js, focusing on Zod validation, database integration, and email setup using Resend. I implemented custom OTP signup, NextAuth authentication, and AI features. Additionally, I worked on advanced form handling with React Hook Form, Shadcn, and user dashboard functionality. The project is ongoing and nearing completion",
+      tools: ["Next.js", "Typescript", "React.js", "MongoDB"],
+      link:"https://github.com/AnasRais12/mystery-message"
     },
   ];
 
