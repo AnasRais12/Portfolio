@@ -27,6 +27,14 @@ const Project = forwardRef((props, ref) => {
 
       link:"https://github.com/AnasRais12/mystery-message"
     },
+   
+    {
+      names: "Portfolio",
+      description:"Welcome to my portfolio! I am a Frontend Developer with a passion for crafting responsive web applications. As I progress in my career, I aspire to become a MERN stack developer, enhancing my skills in both frontend and backend technologies. Explore my projects, which reflect my commitment to quality and user experience, and feel free to connect for potential collaborations",
+     tools: ["Next.js", "Tailwind CSS", "Gsap"],
+
+      link:"https://github.com/AnasRais12/Portfolio"
+    },
   ];
 
   useEffect(() => {
@@ -65,7 +73,7 @@ const Project = forwardRef((props, ref) => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={` sticky-card py-10   sm:w-[80%] w-[90%]  md:w-[70%] lg:w-[60%] xl:w-[50%] px-6 lg:px-8 xl:px-10 shadow-custom  shadow-gray-700 dark:shadow-gray-500 bg-[#111111] dark:bg-gray-200   relative overflow-visible  justify-center flex text-[20px] font-bold font-sans rounded-lg transition-transform duration-500 ease-in-out transform opacity-70 hover:scale-110   `}
+                className={` sticky-card py-10   sm:w-[80%] w-[90%]  md:w-[70%] lg:w-[60%] xl:w-[50%] px-6 lg:px-8 xl:px-10 shadow-custom  shadow-gray-700 dark:shadow-gray-500 bg-[#111111] dark:bg-gray-200   relative overflow-visible  justify-center flex text-[20px] font-bold font-sans rounded-lg transition-transform duration-500 ease-in-out transform opacity-70 sm:hover:scale-110 hover:scale-150   `}
               >
                 <div className=" project-card flex text-center flex-col gap-8 w-full justify-center items-center ">
                   <h1 className=" project-heading md:text-[38px] sm:text-[35px] text-[30px] lg:text-[40px]  dark:text-gray-900 text-gray-200 pb-3 border-b-2 dark:border-b-black    ">{project.names}</h1>
