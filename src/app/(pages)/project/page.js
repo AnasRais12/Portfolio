@@ -17,7 +17,7 @@ const Project = forwardRef((props, ref) => {
     {
       names: "Todo-List",
      description: "This Todo Application uses AdonisJS for the backend and Next, Axios, and Moment.js for the frontend. It features CRUD functionalities for managing tasks and subtasks with deadlines, real-time data fetching, and drag-and-drop prioritization, offering an intuitive way to manage todo lists.",
-     tools: ["Next.js", "Tailwind CSS","Adonis.js","MYSQL"],
+     tools: ["Next.js", "Tailwind CSS","Adonis.js","MYSQL","Typescript"],
       link:"https://github.com/AnasRais12/Todos"
     },
     {
