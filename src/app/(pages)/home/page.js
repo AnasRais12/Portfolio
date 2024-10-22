@@ -221,7 +221,7 @@ const Home = ({ aboutRef, projectRef, contactRef, skillsRef,toggleDarkMode,darkM
                 download={"Anas"}
               >
                 <button
-                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-2 lg:px-32 text-[17px] sm:text-[20px] xl:px-36 xl:text-[1.5vw] lg:text-[25px] md:mt-[0px] mt-[20px]  font-bold hover:scale-125 duration-300`}
+                  className={`bg-[aqua] dark:bg-blue-500 font-sans text-white rounded-[10px] py-2  px-20 sm:px-28 md:px-20 md:py-2 lg:py-2 lg:px-32 text-[17px] sm:text-[20px] xl:px-36 xl:text-[1.5vw] lg:text-[25px] md:mt-[0px] mt-[20px]  font-bold hover:scale-75  sm:hover:scale-105  duration-300`}
                 >
                   Resume
                 </button>
