@@ -4,43 +4,7 @@ import { gsap } from "gsap";
 import { forwardRef } from "react";
 
 const Contact = forwardRef(({ darkMode }, ref) => {
-  useEffect(() => {
-    const finals = "M 10 100 Q 500 100 990 100"; // Final path after mouse leaves
 
-    const string = document.querySelector("#lines svg"); // Select the SVG element
-    const path = string.querySelector("path"); // Select the path inside the SVG
-
-    // Mousemove event to animate the line based on mouse position
-    string.addEventListener("mousemove", function (event) {
-      const rect = string.getBoundingClientRect(); // Get the SVG's position relative to the viewport
-      const x = event.clientX - rect.left; // Mouse X relative to SVG
-      const y = event.clientY - rect.top;  // Mouse Y relative to SVG
-
-      // Calculate the dynamic path (adjusting Y slightly to avoid going too far up)
-      const paths =  `M 10 100 Q ${x} ${Math.max(y, 600)} 990 100`;
-
-      gsap.to(path, {
-        attr: { d: paths },
-        duration: 0.7,
-        ease: "power3.out",
-      });
-    });
-
-    // Mouseleave event to reset the line to its original position
-    string.addEventListener("mouseleave", function () {
-      gsap.to(path, {
-        attr: { d: finals },
-        duration: 1.3,
-        ease: "elastic.inOut",
-      });
-    });
-
-    // Clean up event listeners on component unmount
-    return () => {
-      string.removeEventListener("mousemove", this);
-      string.removeEventListener("mouseleave", this);
-    };
-  }, []);
 
   return (
     <>
