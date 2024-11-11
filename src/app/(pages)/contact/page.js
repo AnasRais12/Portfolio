@@ -44,7 +44,7 @@ const Contact = forwardRef(({ darkMode }, ref) => {
 
   return (
     <>
-      <div ref={ref} className="contact-box w-full pt-16 bg-[#0f0d0d] dark:bg-gray-100 flex flex-col gap-4">
+      <div ref={ref} className="contact-box w-full pt-16 pb-6 bg-[#0f0d0d] dark:bg-gray-100 flex flex-col gap-4">
         <h1 className="text-center font-semibold font-Noto text-white dark:text-Shade md:text-[50px] sm:text-[50px] text-[40px] lg:text-[50px]">
           Get In Touch
         </h1>
@@ -75,11 +75,7 @@ const Contact = forwardRef(({ darkMode }, ref) => {
             </a>
           </div>
         </div>
-        <div id="lines" className="h-[70px] dark:bg-gray-100 w-full">
-          <svg viewBox="0 0 1000 500" preserveAspectRatio="none" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 10 100 Q 500 100 990 100" stroke={`${darkMode? 'gray-100': 'white'}`} strokeWidth="20" fill="transparent" />
-          </svg>
-        </div>
+        
       </div>
     </>
   );
