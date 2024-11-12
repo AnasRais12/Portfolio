@@ -67,7 +67,7 @@ const Project = forwardRef((props, ref) => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`sticky-card py-10 sm:w-[80%] w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] px-6 lg:px-8 xl:px-10 shadow-lg shadow-[#1b1b1b]  dark:shadow-lg dark:border-1    bg-[#141414] dark:bg-gray-100 relative overflow-visible justify-center flex text-[20px] font-bold font-sans rounded-lg transition-transform duration-500 ease-in-out transform opacity-70 hover:scale-110 z-0 hover:opacity-100  hover:z-10`}
+                className={`sticky-card py-10 sm:w-[80%] w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] px-6 lg:px-8 xl:px-10 shadow-lg  dark:shadow-lg    bg-[#1d1c1c] dark:bg-gray-100 dark:border-t-4 relative overflow-visible justify-center flex text-[20px] font-bold font-sans rounded-lg transition-transform duration-500 ease-in-out transform opacity-70 hover:scale-110 z-0 hover:opacity-100  hover:z-10`}
               >
                 <div className=" project-card flex text-center flex-col gap-8 w-full justify-center items-center   ">
                   <h1 className=" project-heading md:text-[38px] sm:text-[35px] text-[30px] lg:text-[40px]  dark:text-gray-900 text-gray-200 pb-3 border-b-2 dark:border-b-black    ">{project.names}</h1>
