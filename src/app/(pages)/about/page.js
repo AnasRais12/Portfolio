@@ -24,7 +24,7 @@ const About = forwardRef((props, ref) => {
           <div className="boxes grid lg:grid-cols-2 grid-cols-1 gap-16 mt-10">
             <div
               id="experi"
-              className="animation-left p-10 dark:shadow-lg shadow-custom     hover:duration-500 cursor-pointer  relative"
+              className="animation-left p-10 dark:shadow-lg shadow-custom  bg-[#201d1d] dark:bg-gray-100 dark:border-t-4    hover:duration-500 cursor-pointer  relative"
             >
               <h1
                 className={`md:text-[36px] sm:text-[30px] text-[30px] lg:text-start text-center font-serif text-[aqua] dark:text-blue-500   font-semibold capitalize `}
@@ -38,7 +38,7 @@ const About = forwardRef((props, ref) => {
                 Present )
               </h2>
               <p
-                className={`md:text-[20px]  sm:text-[16px] lg:text-start text-center  [#1E1E1E] font-Noto font-normal text-[#E0E0E0] dark:text-Shade`}
+                className={`md:text-[20px]  sm:text-[16px] lg:text-start text-center   [#1E1E1E] font-Noto font-normal text-[#E0E0E0] dark:text-Shade`}
               >
                 At Nexomos <br /> I work on both frontend and backend tasks,
                 focusing on creating intuitive UI designs, implementing complex
@@ -47,7 +47,7 @@ const About = forwardRef((props, ref) => {
                 processing on the backend.
               </p>
             </div>
-            <div className="animation-right p-10 dark:shadow-lg shadow-custom   hover:duration-500 cursor-pointer">
+            <div className="animation-right p-10 dark:shadow-lg shadow-lg bg-[#1d1c1c] dark:bg-gray-100 dark:border-t-4   hover:duration-500 cursor-pointer">
               <h1
                 className={`  lg:text-start text-center  text-[aqua] dark:text-blue-500  md:text-[36px] sm:text-[30px] text-[30px] font-serif  font-semibold capitalize`}
               >
